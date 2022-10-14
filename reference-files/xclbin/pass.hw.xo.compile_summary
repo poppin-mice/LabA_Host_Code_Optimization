@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/xclbin/pass.hw.xo.compile_summary",
+ "thisFile": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/xclbin/pass.hw.xo.compile_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,12 +9,12 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Tue Oct 11 19:45:20 2022",
- "timestampMillis": "1665488720153",
+ "dateTimestamp": "Thu Oct 13 14:09:30 2022",
+ "timestampMillis": "1665641370529",
  "buildStep": {
-  "cmdId": "37a02948-71a1-40fe-ac87-57e3b385e7a3",
+  "cmdId": "7654cbfa-576d-4ac8-aa08-6be20ece52b7",
   "name": "v++",
-  "logFile": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/_x/pass.hw/pass.hw.steps.log",
+  "logFile": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/_x/pass.hw/pass.hw.steps.log",
   "commandLine": "/opt/Xilinx/Vitis/2022.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform xilinx_u50_gen3x16_xdma_5_202210_1 --save-temps -c -k pass -Isrc -oxclbin/pass.hw.xo src/pass.cpp ",
   "args": [
    "-t",
@@ -30,17 +30,17 @@
    "src/pass.cpp"
   ],
   "iniFiles": [],
-  "cwd": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files"
+  "cwd": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Oct 11 19:45:20 2022",
- "timestampMillis": "1665488720156",
+ "dateTimestamp": "Thu Oct 13 14:09:30 2022",
+ "timestampMillis": "1665641370531",
  "status": {
-  "cmdId": "37a02948-71a1-40fe-ac87-57e3b385e7a3",
+  "cmdId": "7654cbfa-576d-4ac8-aa08-6be20ece52b7",
   "state": "CS_RUNNING"
  }
 }
@@ -48,8 +48,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Tue Oct 11 19:45:23 2022",
- "timestampMillis": "1665488723733",
+ "dateTimestamp": "Thu Oct 13 14:09:33 2022",
+ "timestampMillis": "1665641373960",
  "buildSummary": {
   "hardwarePlatform": "xilinx_u50_gen3x16_xdma_5_202210_1.xpfm",
   "hardwareDsa": "",
@@ -63,12 +63,12 @@
     "base": {
      "type": "KERNEL",
      "name": "pass",
-     "file": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/xclbin/pass.hw.xo",
+     "file": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/xclbin/pass.hw.xo",
      "reports": [],
      "uuid": ""
     },
     "sources": [
-     "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/src/pass.cpp"
+     "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/src/pass.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -84,32 +84,32 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Tue Oct 11 19:45:23 2022",
- "timestampMillis": "1665488723739",
+ "dateTimestamp": "Thu Oct 13 14:09:33 2022",
+ "timestampMillis": "1665641373966",
  "buildStep": {
-  "cmdId": "e34acc28-96a9-4832-a308-cec3259650c5",
+  "cmdId": "7fcb5382-485b-4dd4-9460-a16e147eb193",
   "name": "vitis_hls",
-  "logFile": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/_x/pass.hw/pass/vitis_hls.log",
-  "commandLine": "vitis_hls -f /mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/_x/pass.hw/pass/pass.tcl -messageDb vitis_hls.pb",
+  "logFile": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/_x/pass.hw/pass/vitis_hls.log",
+  "commandLine": "vitis_hls -f /mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/_x/pass.hw/pass/pass.tcl -messageDb vitis_hls.pb",
   "args": [
    "vitis_hls",
    "-f",
-   "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/_x/pass.hw/pass/pass.tcl",
+   "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/_x/pass.hw/pass/pass.tcl",
    "-messageDb",
    "vitis_hls.pb"
   ],
   "iniFiles": [],
-  "cwd": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files"
+  "cwd": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Oct 11 19:45:23 2022",
- "timestampMillis": "1665488723740",
+ "dateTimestamp": "Thu Oct 13 14:09:33 2022",
+ "timestampMillis": "1665641373967",
  "status": {
-  "cmdId": "e34acc28-96a9-4832-a308-cec3259650c5",
+  "cmdId": "7fcb5382-485b-4dd4-9460-a16e147eb193",
   "state": "CS_RUNNING"
  }
 }
@@ -117,10 +117,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Oct 11 19:45:55 2022",
- "timestampMillis": "1665488755066",
+ "dateTimestamp": "Thu Oct 13 14:10:12 2022",
+ "timestampMillis": "1665641412341",
  "status": {
-  "cmdId": "e34acc28-96a9-4832-a308-cec3259650c5",
+  "cmdId": "7fcb5382-485b-4dd4-9460-a16e147eb193",
   "state": "CS_PASSED"
  }
 }
@@ -128,10 +128,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Oct 11 19:45:55 2022",
- "timestampMillis": "1665488755311",
+ "dateTimestamp": "Thu Oct 13 14:10:12 2022",
+ "timestampMillis": "1665641412658",
  "report": {
-  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/_x/pass.hw/pass/pass/solution/.autopilot/db/pass.design.xml",
+  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/_x/pass.hw/pass/pass/solution/.autopilot/db/pass.design.xml",
   "name": "pass",
   "fileType": "XML",
   "reportType": "KERNEL_HLS_REPORT",
@@ -142,10 +142,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Oct 11 19:45:55 2022",
- "timestampMillis": "1665488755312",
+ "dateTimestamp": "Thu Oct 13 14:10:12 2022",
+ "timestampMillis": "1665641412659",
  "report": {
-  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/_x/pass.hw/pass/pass/solution/.autopilot/db/.message_syn.xml",
+  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/_x/pass.hw/pass/pass/solution/.autopilot/db/.message_syn.xml",
   "name": "pass",
   "fileType": "XML",
   "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
@@ -156,10 +156,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Oct 11 19:45:55 2022",
- "timestampMillis": "1665488755317",
+ "dateTimestamp": "Thu Oct 13 14:10:12 2022",
+ "timestampMillis": "1665641412664",
  "report": {
-  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/_x/reports/pass.hw/hls_reports/pass_csynth.rpt",
+  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/_x/reports/pass.hw/hls_reports/pass_csynth.rpt",
   "name": "pass",
   "fileType": "TEXT",
   "reportType": "KERNEL_HLS_CSYNTH",
@@ -170,10 +170,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Oct 11 19:45:55 2022",
- "timestampMillis": "1665488755318",
+ "dateTimestamp": "Thu Oct 13 14:10:12 2022",
+ "timestampMillis": "1665641412665",
  "report": {
-  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/_x/pass.hw/pass/pass/solution/syn/report/pass_csynth.xml",
+  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/_x/pass.hw/pass/pass/solution/syn/report/pass_csynth.xml",
   "name": "pass",
   "fileType": "XML",
   "reportType": "KERNEL_HLS_CSYNTH",
@@ -184,10 +184,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Oct 11 19:45:55 2022",
- "timestampMillis": "1665488755326",
+ "dateTimestamp": "Thu Oct 13 14:10:12 2022",
+ "timestampMillis": "1665641412673",
  "report": {
-  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/_x/reports/pass.hw/system_estimate_pass.hw.xtxt",
+  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/_x/reports/pass.hw/system_estimate_pass.hw.xtxt",
   "name": "",
   "fileType": "TEXT",
   "reportType": "GLOBAL_SYSTEM_ESTIMATE",
@@ -198,10 +198,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Oct 11 19:45:55 2022",
- "timestampMillis": "1665488755884",
+ "dateTimestamp": "Thu Oct 13 14:10:13 2022",
+ "timestampMillis": "1665641413209",
  "report": {
-  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/_x/reports/pass.hw/v++_compile_pass.hw_guidance.html",
+  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/_x/reports/pass.hw/v++_compile_pass.hw_guidance.html",
   "name": "",
   "fileType": "HTML",
   "reportType": "GLOBAL_RULECHECK_GUIDANCE",
@@ -212,10 +212,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Tue Oct 11 19:45:55 2022",
- "timestampMillis": "1665488755886",
+ "dateTimestamp": "Thu Oct 13 14:10:13 2022",
+ "timestampMillis": "1665641413211",
  "report": {
-  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/07-host-code-opt/reference-files/_x/v++_compile_pass.hw_guidance.pb",
+  "path": "/mnt/HLSNAS/01.FENFBR/Workspace/LabA/LabA_Host_Code_Optimization/reference-files/_x/v++_compile_pass.hw_guidance.pb",
   "name": "",
   "fileType": "BINARY_PROTOBUF",
   "reportType": "GLOBAL_RULECHECK_GUIDANCE",
@@ -226,10 +226,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Tue Oct 11 19:45:55 2022",
- "timestampMillis": "1665488755892",
+ "dateTimestamp": "Thu Oct 13 14:10:13 2022",
+ "timestampMillis": "1665641413218",
  "status": {
-  "cmdId": "37a02948-71a1-40fe-ac87-57e3b385e7a3",
+  "cmdId": "7654cbfa-576d-4ac8-aa08-6be20ece52b7",
   "state": "CS_PASSED"
  }
 }

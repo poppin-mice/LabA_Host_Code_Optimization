@@ -70,11 +70,28 @@ int main(int argc, char* argv[]) {
   //}
   //clFinish(api.getQueue());
   
+  
+  //for(unsigned int i=0; i < numBuffers; i++) {
+  //  if(i < 3) {
+  //    tasks[i].run(api);
+  //  } else {
+  //    tasks[i].run(api, tasks[i-3].getDoneEv());
+  //  }
+  //}
+  //clFinish(api.getQueue());
+  
+  //for(unsigned int i=0; i < numBuffers; i++) {
+  //  tasks[i].run(api);
+  //  clWaitForEvents(1,tasks[i].getDoneEv());
+  //}
+  //clFinish(api.getQueue());
+  
   for(unsigned int i=0; i < numBuffers; i++) {
     if(i < 3) {
       tasks[i].run(api);
     } else {
-      tasks[i].run(api, tasks[i-3].getDoneEv());
+      clWaitForEvents(1,tasks[i-3].getDoneEv());
+      tasks[i].run(api); 
     }
   }
   clFinish(api.getQueue());

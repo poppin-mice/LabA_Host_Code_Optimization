@@ -1,15 +1,13 @@
-Tue Oct 11 20:16:57 2022: Server was asked to start on port: '35649'
-Tue Oct 11 20:16:57 2022: Server is using token UUID: 'c7f8063b-e11e-480a-8cca-dddba60f012e'
-Tue Oct 11 20:16:57 2022: Attempting to start server on port '35649'
-Tue Oct 11 20:16:57 2022: XRC main fifo: created main fifo '/tmp/xrcmainc7f8063b-e11e-480a-8cca-dddba60f012e', fd read = 13
-Tue Oct 11 20:16:57 2022: Running Rule Check Server
-Tue Oct 11 20:16:57 2022: Version 1.6.1
-Tue Oct 11 20:16:58 2022: Rule Check Server: Accepted socket connection from client
-Tue Oct 11 20:16:58 2022: EXCHANGE_TOKEN received, server token: c7f8063b-e11e-480a-8cca-dddba60f012e, passed token: c7f8063b-e11e-480a-8cca-dddba60f012e
-Tue Oct 11 21:08:14 2022: STOP_SERVER received, server token: 733863cc-f3fa-416a-8647-0fa51a28bf7d, passed token: 733863cc-f3fa-416a-8647-0fa51a28bf7d
-Tue Oct 11 21:08:14 2022: Socket received request to stop server.
-Tue Oct 11 21:08:14 2022: SERVER: destructor for server bound to port 38787
-Tue Oct 11 21:08:14 2022: XRC main fifo: Good unlink of /tmp/xrcmain733863cc-f3fa-416a-8647-0fa51a28bf7d
-Tue Oct 11 21:08:14 2022: Server exiting with status 0.
-Tue Oct 11 21:08:14 2022: Closing log file.
-a044-1b38-4f60-ab39-6ae44cb4fe9a' with name 'v++_link_pass.hw.xilinx_u50_gen3x16_xdma_5_202210_1'
+Thu Oct 13 14:10:24 2022: Server was asked to start on port: '46823'
+Thu Oct 13 14:10:24 2022: Server is using token UUID: 'e1f4bb1e-eff3-4d60-b454-ec9a49575570'
+Thu Oct 13 14:10:24 2022: Attempting to start server on port '46823'
+Thu Oct 13 14:10:24 2022: XRC main fifo: created main fifo '/tmp/xrcmaine1f4bb1e-eff3-4d60-b454-ec9a49575570', fd read = 13
+Thu Oct 13 14:10:24 2022: Running Rule Check Server
+Thu Oct 13 14:10:24 2022: Version 1.6.1
+Thu Oct 13 14:10:25 2022: Rule Check Server: Accepted socket connection from client
+Thu Oct 13 14:10:25 2022: EXCHANGE_TOKEN received, server token: e1f4bb1e-eff3-4d60-b454-ec9a49575570, passed token: e1f4bb1e-eff3-4d60-b454-ec9a49575570
+Thu Oct 13 14:10:25 2022: SESSION_MGR: creating session with session uuid: '86c570da-3c3c-4a98-b987-eeedac49e995' and name 'v++_link_pass.hw.xilinx_u50_gen3x16_xdma_5_202210_1'
+Thu Oct 13 14:10:29 2022: Rule Check Server: Accepted socket connection from client
+Thu Oct 13 14:10:49 2022: Rule Check Server: Accepted socket connection from client
+Thu Oct 13 14:13:16 2022: Rule Check Server: Accepted socket connection from client
+Thu Oct 13 14:41:26 2022: SESSION_MGR: closing session for UUID '86c570da-3c3c-4a98-b987-eeedac49e995' with name 'v++_link_pass.hw.xilinx_u50_gen3x16_xdma_5_202210_1'

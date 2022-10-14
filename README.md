@@ -35,7 +35,7 @@ The following sections focus on the following specific host code optimization co
 This tutorial uses:
 
 * BASH Linux shell commands
-* 2022.1 Vitis core development kit release and the *xilinx_u200_gen3x16_xdma_2_202110_1* platform.  
+* 2022.1 Vitis core development kit release and the *xilinx_u50_gen3x16_xdma_5_202210_1* platform.  
 If necessary, it can be easily ported to other versions and platforms.
 
 >**IMPORTANT:**  
@@ -67,7 +67,7 @@ Although some host code optimizations perform well with the hardware emulation, 
 Run the following makefile command to compile the kernel to the specified accelerator card.
 
 ```
-make TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_2_202110_1 xclbin
+make TARGET=hw DEVICE=xilinx_u50_gen3x16_xdma_5_202210_1 xclbin
 ```
 
 >**NOTE:** This build process can take several hours, but the kernel compilation must be completed before you can analyze the impact of optimizations on the host code performance.
@@ -157,7 +157,7 @@ In this case, the code schedules all the buffers and lets them execute. Only at 
 1. Compile and run the host code (`srcPipeline/host.cpp`) using the following command.
 
    ```
-   make TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_2_202110_1 LAB=pipeline
+   make TARGET=hw DEVICE=xilinx_u50_gen3x16_xdma_5_202210_1 LAB=pipeline
    ```
 
    Compared to the kernel compilation time, this build step takes very little time.
@@ -176,13 +176,13 @@ In this case, the code schedules all the buffers and lets them execute. Only at 
    Use the following command to run the application.
 
    ```
-   make run TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_2_202110_1 LAB=pipeline
+   make run TARGET=hw DEVICE=xilinx_u50_gen3x16_xdma_5_202210_1 LAB=pipeline
    ```
 
    After the run completes, open the Application Timeline using the Vitis analyzer, then select the Application Timeline located in left side panel.
 
    ```
-   vitis_analyzer runPipeline/pass.hw.xilinx_u200_gen3x16_xdma_2_202110_1.xclbin.run_summary
+   vitis_analyzer pipeline/xrt.run_summary
    ```
 
    The Application Timeline view illustrates the full run of the executable. The three main sections of the timeline are:
@@ -213,8 +213,8 @@ In this case, the code schedules all the buffers and lets them execute. Only at 
 5. Recompile the application, rerun the program, and review the run_summary in Vitis analyze: 
 
    ```
-   make run TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_2_202110_1 LAB=pipeline
-   vitis_analyzer pipeline/pass.hw.xilinx_u200_gen3x16_xdma_2_202110_1.xclbin.run_summary
+   make run TARGET=hw DEVICE=xilinx_u50_gen3x16_xdma_5_202210_1 LAB=pipeline
+   vitis_analyzer pipeline/xrt.run_summary
    ```
 
    If you zoom in on the Application Timeline, and click any kernel enqueue, you should see results similar to the following figure.
@@ -266,13 +266,13 @@ To alleviate these issues, the OpenCL framework provides two methods of synchron
 2. Compile and execute the `sync_host.cpp` code.
 
    ```
-   make run TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_2_202110_1 LAB=sync
+   make run TARGET=hw DEVICE=xilinx_u50_gen3x16_xdma_5_202210_1 LAB=sync
    ```
 
 3. After the run completes, open the Application Timeline using the Vitis analyzer, then  click the Application Timeline located at left side panel.
 
    ```
-   vitis_analyzer sync/pass.hw.xilinx_u200_gen3x16_xdma_2_202110_1.xclbin.run_summary
+   vitis_analyzer sync/xrt.run_summary
    ```
    
    If you zoom in on the Application Timeline, an image is displayed similar to the following figure.
@@ -302,8 +302,8 @@ To alleviate these issues, the OpenCL framework provides two methods of synchron
 5. Recompile the application, rerun the program, and review the run_summary in Vitis analyze:
 
    ```
-   make run TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_2_202110_1 LAB=sync
-   vitis_analyzer sync/pass.hw.xilinx_u200_gen3x16_xdma_2_202110_1.xclbin.run_summary
+   make run TARGET=hw DEVICE=xilinx_u50_gen3x16_xdma_5_202210_1 LAB=sync
+   vitis_analyzer sync/xrt.run_summary
    ```
 
    If you zoom in on the Application Timeline, an image is displayed similar to the following figure.
@@ -344,7 +344,7 @@ A second command line option (`SIZE=`) has also been added to specify the buffer
 1. Compile and run the host code.
 
    ```
-   make run TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_2_202110_1 SIZE=14 LAB=buf
+   make run TARGET=hw DEVICE=xilinx_u50_gen3x16_xdma_5_202210_1 SIZE=14 LAB=buf
    ```
 
    The argument `SIZE` is used as a second argument to the host executable.
@@ -355,14 +355,14 @@ A second command line option (`SIZE=`) has also been added to specify the buffer
 3. After the run completes, open the Application Timeline using the Vitis analyzer, then  click the Application Timeline located at left side panel.
 
    ```
-   vitis_analyzer buf/pass.hw.xilinx_u200_gen3x16_xdma_2_202110_1.xclbin.run_summary
+   vitis_analyzer buf/pass.hw.xilinx_u50_gen3x16_xdma_5_202210_1.xclbin.run_summary
    ```
     Examine the tmeline to review the operation. 
 
 4. To ease the sweeping of different buffer sizes, an additional makefile target was created, wich can be run using the following command.
 
    ```
-   make TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_2_202110_1 bufRunSweep
+   make TARGET=hw DEVICE=xilinx_u50_gen3x16_xdma_5_202210_1 bufRunSweep
    ```
    >**NOTE**: The sweeping script (`auxFiles/run.py`) requires a Python installation, which is available in most systems. 
    
